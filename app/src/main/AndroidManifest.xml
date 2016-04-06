@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ziyu16901.com" >
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Note.NoteActivity"
+            android:label="@string/title_activity_note"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Note.MainShow"
+            android:label="@string/title_activity_main_show"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Note.Look"
+            android:label="@string/title_activity_look"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Share.ShareToWeChat"
+            android:label="@string/title_activity_share_to_we_chat"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity2"
+            android:label="@string/title_activity_login2" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.TableActivity" />
+        <activity android:name=".Activity.PersonalMessageActivity" />
+        <activity android:name=".Activity.MessageActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.SettingsActivity" />
+        <activity android:name=".Activity.MyActivity" />
+        <activity android:name=".PersonalCenter" />
+        <activity android:name=".Activity.MyOrganization" />
+        <activity android:name=".EntryActivity" />
+        <activity android:name=".Activity.PersonalCenterActivity" />
+        <activity android:name=".Huodong_Info_Activity" />
+        <activity android:name=".Activity.Huodong_detail" />
+        <activity
+            android:name=".Activity.OnlineChat"
+            android:label="@string/title_activity_online_chat"
+            android:theme="@style/AppTheme" >
+        </activity>
+    </application>
+
+</manifest>

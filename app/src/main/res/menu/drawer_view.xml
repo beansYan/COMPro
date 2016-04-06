@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+
+            android:id="@+id/nav_Login"
+            android:icon="@drawable/ic_dashboard"
+            android:title="登陆" />
+        <item
+            android:id="@+id/nav_Persona_Center"
+            android:icon="@drawable/ic_event"
+            android:title="个人中心" />
+
+
+    </group>
+
+    <item android:title="收藏">
+        <menu>
+            <item
+                android:id="@+id/nav_My_Organization"
+                android:icon="@drawable/ic_dashboard"
+                android:title="我的社团" />
+            <item
+                android:id="@+id/nav_My_Activity"
+                android:icon="@drawable/ic_forum"
+                android:title="我的活动" />
+        </menu>
+    </item>
+
+    <item android:title="设置">
+        <menu>
+            <item
+                android:id="@+id/nav_Chat"
+                android:icon="@drawable/ic_dashboard"
+                android:title="聊天室"/>
+        </menu>
+    </item>
+</menu>

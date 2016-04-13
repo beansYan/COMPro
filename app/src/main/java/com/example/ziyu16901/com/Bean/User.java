@@ -1,40 +1,106 @@
 package com.example.ziyu16901.com.Bean;
 
+import cn.bmob.v3.BmobUser;
+
 /**
- * Created by 16901 on 2015/12/28.
+ * 用户实体类
+ * @date 2016-4-13
+ * @author beansYan
  */
-public class User {
+@SuppressWarnings("serial")
+public class User extends BmobUser {
 
-    private int id;
-    private String username;
-    private String userpwd;
+    // 父类中已经存在的属性
+    // private String id;
+    // private String username;
+    // private String password;
+    // private String email;
+    // private String regTime;
 
-    public int getId() {
-        return id;
+    private String sex;  		// 性别
+    private String phone; 		// 电话
+    private String qq; 			// QQ
+    private String school = "江西师范大学";  // 学校
+    private String cademy; 		// 学院
+    private String dorPart; 	// 校区
+    private String dorNum; 		// 寝室号
+    private String state = "未登陆"; 		// 登录状态
+    private String type = "普通用户";		// 用户类型(普通用户、黑名单、中奖者)
+    //private BmobFile picUser; 	// 头像
+
+    public String getType() {
+        return type;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setType(String type) {
+        this.type = type;
     }
 
-
-
-    public String getUsername() {
-        return username;
+    public String getSex() {
+        return sex;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
-    public String getUserpwd() {
-        return userpwd;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setUserpwd(String userpwd) {
-        this.userpwd = userpwd;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
+    public String getQQ() {
+        return qq;
+    }
 
+    public void setQQ(String qq) {
+        this.qq = qq;
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public void setSchool(String school) {
+        this.school = school;
+    }
+
+    public String getCademy() {
+        return cademy;
+    }
+
+    public void setCademy(String cademy) {
+        this.cademy = cademy;
+    }
+
+    public String getDorPart() {
+        return dorPart;
+    }
+
+    public void setDorPart(String dorPart) {
+        this.dorPart = dorPart;
+    }
+
+    public String getDorNum() {
+        return dorNum;
+    }
+
+    public void setDorNum(String dorNum) {
+        this.dorNum = dorNum;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
 
 }
+
+
+

@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:id="@+id/username"
-        android:text="Spider Man"
+        android:text=""
         android:layout_marginTop="15dp"
         android:textColor="#ffffff" />
 

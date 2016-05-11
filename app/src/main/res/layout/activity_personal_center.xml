@@ -75,12 +75,238 @@
 
 
 
-            <com.example.ziyu16901.com.Bean.MyListView
-                android:id="@+id/lv_comments"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:listSelector="#d6d6d6"
-                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_star_yes"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="昵称"
+                    android:textColor="#474747"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mineinfo_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#696969"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="15dp"
+                    android:text="资料"
+                    android:textColor="#FF8833" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFF8833" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_star_yes"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="性别"
+                    android:textColor="#474747"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mineinfo_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#696969"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_star_yes"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="学校"
+                    android:textColor="#474747"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mineinfo_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#696969"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_star_yes"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="学院"
+                    android:textColor="#474747"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mineinfo_cademy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#696969"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_star_yes"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="所在社团"
+                    android:textColor="#474747"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mineinfo_belongcom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#696969"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="test"
+                    android:onClick="setsj"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="15dp"
+                    android:text="联系方式"
+                    android:textColor="#FF8833" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFF8833" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_star_yes"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="手机"
+                    android:textColor="#474747"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mineinfo_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#696969"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_star_yes"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="QQ"
+                    android:textColor="#474747"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mineinfo_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:textColor="#696969"
+                    android:textSize="14sp" />
+            </RelativeLayout>
 
 
         </LinearLayout>
@@ -91,12 +317,12 @@
 
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/btn_main_send"
+        android:onClick="fabedit"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         app:layout_anchor="@id/appbar"
         app:layout_anchorGravity="bottom|right|end"
-        android:src="@drawable/ic_discuss"
+        android:src="@drawable/ic_note"
         android:layout_margin="@dimen/fab_margin"
         android:clickable="true"/>
 

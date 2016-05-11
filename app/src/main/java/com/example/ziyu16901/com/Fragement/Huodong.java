@@ -20,7 +20,7 @@ public class Huodong extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mhuodongView = inflater.inflate(R.layout.fragment_huodong, container, false);
+        mhuodongView = inflater.inflate(R.layout.fragment_fenlei, container, false);
         return mhuodongView;
     }
 
@@ -28,7 +28,7 @@ public class Huodong extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mRecyclerView = (RecyclerView) mhuodongView.findViewById(R.id.hd);
+        mRecyclerView = (RecyclerView) mhuodongView.findViewById(R.id.fl);
 //
         //使用线性布局LinearLayoutManger
         LinearLayoutManager manager = new LinearLayoutManager(mRecyclerView.getContext());

@@ -27,14 +27,14 @@ public class HuodongAdapter extends RecyclerView.Adapter {
         private ImageView CaImage;
 
         //绑定子对象视图,关联TextView和ViewHolder
-        public ViewHolder(View card) {
-            super(card);
+        public ViewHolder(View huodong) {
+            super(huodong);
 
        //获取布局控件
-         CaImage = (ImageView) card.findViewById(R.id.CaImage);
-            CaTitle = (TextView) card.findViewById(R.id.CaTitle);
-            CaOrganization = (TextView) card.findViewById(R.id.CaOrganization);
-            CaTime = (TextView) card.findViewById(R.id.CaTime);
+         CaImage = (ImageView) huodong.findViewById(R.id.CaImage);
+            CaTitle = (TextView) huodong.findViewById(R.id.CaTitle);
+            CaOrganization = (TextView) huodong.findViewById(R.id.CaOrganization);
+            CaTime = (TextView) huodong.findViewById(R.id.CaTime);
         }
 
 
@@ -60,7 +60,7 @@ public class HuodongAdapter extends RecyclerView.Adapter {
     //创建ViewHoulder类
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //创建ViewHoulder      //创建一个布局解释器
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_huodonglist,null));
+        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_huodonglist,parent,false));
     }
 
     @Override
@@ -104,7 +104,9 @@ public class HuodongAdapter extends RecyclerView.Adapter {
 
     //定义数组
 //    private String[] data = new String[]{"文学艺术", "体育休闲", "社会实践", "理论研究", "技能培养", "学术科技"};
-private CardData[] data = new CardData[]{new CardData("青春开讲啦","团工委","10月20日"),new CardData("青春开讲啦2","团工委2","10月21日"),
+private CardData[] data = new CardData[]{
+            new CardData("青春开讲啦","团工委","10月20日"),
+            new CardData("青春开讲啦2","团工委2","10月21日"),
             new CardData("青春开讲啦3","团工委3","10月23日"),
             new CardData("青春开讲啦4","团工委4","10月24日"),
             new CardData("青春开讲啦5","团工委5","10月25日"),

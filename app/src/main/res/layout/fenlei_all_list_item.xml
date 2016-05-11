@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <!-- 社团展示主图  96x96 -->
+
+    <ImageView
+        android:id="@+id/img_shetuan"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/g57"
+        android:contentDescription="社团展示主图" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignBaseline="@id/img_shetuan"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_shetuan"
+        android:background="#F5F5F5"
+        android:padding="5dp" >
+
+        <!-- 社团名 -->
+
+        <TextView
+            android:id="@+id/tv_shetuan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="瑶湖之声合唱团"
+            android:textSize="16sp" />
+
+        <!-- 活动标志/劵 -->
+
+        <TextView
+            android:id="@+id/tv_shetuan_paper"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBaseline="@id/tv_shetuan_name"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/tv_shetuan_name"
+            android:background="#008000"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:text="劵"
+            android:textColor="#F8F8FF"
+            android:textSize="12sp"
+            android:typeface="monospace" />
+
+        <!-- 活动标志/折 -->
+
+        <TextView
+            android:id="@+id/tv_shetuan_discount"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBaseline="@id/tv_shetuan_name"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/tv_shetuan_paper"
+            android:background="#FF4500"
+            android:gravity="center"
+            android:text="新"
+            android:textColor="#F8F8FF"
+            android:textSize="12sp"
+            android:typeface="monospace" />
+
+        <!-- 社团类型 -->
+
+        <TextView
+            android:id="@+id/tv_shetuan_leibie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_shetuan_name"
+            android:layout_centerVertical="true"
+            android:text="文学艺术类"
+            android:textColor="#808080"
+            android:textSize="12sp" />
+
+        <!-- 社团挂靠单位 -->
+
+        <TextView
+            android:id="@+id/tv_shetuan_guakao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_shetuan_name"
+            android:layout_alignParentBottom="true"
+            android:text="校团委"
+            android:textColor="#B8860B"
+            android:textSize="12sp" />
+
+        <!-- 评分 #F8F8FF -->
+
+        <RatingBar
+            android:id="@+id/rb_rate"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:rating="4.5" />
+    </RelativeLayout>
+
+</RelativeLayout>

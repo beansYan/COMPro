@@ -22,7 +22,7 @@ public class User extends BmobUser {
     private String qq; 			// QQ
     private String school = "江西师范大学";  // 学校
     private String cademy; 		// 学院
-    private String dorPart; 	// 校区
+    private String belongCom; 	// 所属社团
     private String dorNum; 		// 寝室号
     private String state = "未登陆"; 		// 登录状态
     private String type = "普通用户";		// 用户类型(普通用户、黑名单、中奖者)
@@ -76,12 +76,12 @@ public class User extends BmobUser {
         this.cademy = cademy;
     }
 
-    public String getDorPart() {
-        return dorPart;
+    public String getBelongCom() {
+        return belongCom;
     }
 
-    public void setDorPart(String dorPart) {
-        this.dorPart = dorPart;
+    public void setBelongCom(String belongCom) {
+        this.belongCom = belongCom;
     }
 
     public String getDorNum() {

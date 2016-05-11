@@ -21,6 +21,7 @@
     <string name="menu_note">备忘录</string>
     <string name="menu_about">关于我们</string>
     <string name="menu_exit">退出</string>
+    <string name="menu_sharecompro">分享</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -46,5 +47,6 @@
     <string name="title_activity_online_chat">OnlineChat</string>
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_reset_psd">ResetPsdActivity</string>
+    <string name="title_activity_personal_info_edit">PersonalInfoEditActivity</string>
 
 </resources>

@@ -39,7 +39,7 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:id="@+id/more"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="300dp"
             android:src="@drawable/ic_more_grey"/>
 
 

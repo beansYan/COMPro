@@ -27,6 +27,9 @@
             <item
                 android:id="@+id/exit"
                 android:title="@string/menu_exit" />
+            <item
+                android:id="@+id/sharecompro"
+                android:title="@string/menu_sharecompro"/>
         </menu>
     </item>
 </menu>

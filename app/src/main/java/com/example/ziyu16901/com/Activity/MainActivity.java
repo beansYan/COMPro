@@ -45,15 +45,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-//        findViewById(R.id.login).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(MainActivity.this, LoginActivity.class));
-//                //startActivity(new Intent(ACTION_VIEW, Uri.parse("http://baidu.com")));
-//            }
-//        });
-
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
 
@@ -88,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+
+
     }
 
     @Override
@@ -137,6 +131,14 @@ public class MainActivity extends AppCompatActivity {
                 adb2.setNegativeButton("取消", null);
                 adb2.show();
                 return true;
+            case R.id.sharecompro:
+                Intent toShare = new Intent(Intent.ACTION_SEND);
+                toShare.setType("text/plain");
+                toShare.putExtra(Intent.EXTRA_SUBJECT, "分享");
+                toShare.putExtra(Intent.EXTRA_TEXT, "COMPro-BATE版" +"\n" + "针对江西师大的社团应用COMPro测试版上线了，赶紧下载体验吧"
+                        + "http://www.github.com");
+                startActivity(Intent.createChooser(toShare, "分享到"));
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
